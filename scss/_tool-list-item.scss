@@ -43,6 +43,10 @@
   height: 0;
 }
 
+.js-list-dropdown--is-open {
+  height: auto;
+}
+
 .tool-list-item--dropdown-content {
   @include opacity(.7);
   width: 65%;
