@@ -1,0 +1,13 @@
+<div class="tool-list-item js-toggle-list-dropdown" style="background-color: {{color}}">
+  <div class="tool-list-item--container">
+    <div class="tool-list-item--title">{{title}}</div>
+    <div class="tool-list-item--entry"><a href="{{entry-anchor}}" title="{{entry}}">{{entry}}</a></div>
+  </div>
+  {{#if notes}}
+    <div class="tool-list-item--dropdown js-list-dropdown">
+      <div class="tool-list-item--dropdown-content wysiwyg">
+        {{#markdown}}{{notes}}{{/markdown}}
+      </div>
+    </div>
+  {{/if}}
+</div>

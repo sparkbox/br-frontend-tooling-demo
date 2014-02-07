@@ -20,3 +20,15 @@
 //   color: gray;
 //   background: darkgray;
 // }
+
+// font stacks
+
+%primary-font {
+  font-family: Verdana, sans-serif;
+}
+
+// toolbox list-style-position: 
+
+%clearfix {
+  @include clearfix;
+}
