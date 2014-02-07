@@ -1,0 +1,51 @@
+.tool-list-item--container {
+  @extend %clearfix;
+  padding: 2em 1em;
+
+  &:hover {
+    @include background-image(linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, .1)));
+    cursor: pointer;
+  }
+}
+
+.tool-list-item--title, .tool-list-item--entry {
+  @include opacity(.7);
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.tool-list-item--title {
+  @include rem( font-size, 2 );
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.tool-list-item--entry {
+  @include rem( font-size, 1.4 );
+  line-height: 1.6;
+  text-align: left;
+  padding-left: 1em;
+
+  a {
+    color: #000;
+  }
+}
+
+.tool-list-item--dropdown {
+  @include background-image(linear-gradient(bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)));
+  @include transition(height 250ms ease-in-out);
+
+  // hidden by default
+  overflow: hidden;
+  height: 0;
+}
+
+.tool-list-item--dropdown-content {
+  @include opacity(.7);
+  width: 65%;
+  margin: 0 auto; 
+  padding: 1em;
+}

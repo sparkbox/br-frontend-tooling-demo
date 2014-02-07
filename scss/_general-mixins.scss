@@ -40,3 +40,15 @@
     }
   }
 }
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin quick-transition {
+  @include transition(all 0.2s ease-out);
+}
