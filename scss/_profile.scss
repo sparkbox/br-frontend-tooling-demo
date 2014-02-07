@@ -21,10 +21,10 @@
     background-color: #979797;
     margin: 0 auto;
   }
+}
 
-  img {
-    @include border-radius(8px);
-  }
+.profile-avatar img {
+  @include border-radius(8px);
 }
 
 .profile-tagline {
