@@ -8,10 +8,22 @@ tool-list:
 
       # RESOURCES I RECOMMEND
 
-      * Perfect Workflow in Sublime Text
-      * Sublime Text 2 and Markdown: Tips, Tricks, and Links
-      * 5 great visual tweaks for Sublime Text
+      * [Perfect Workflow in Sublime Text](http://code.tutsplus.com/articles/perfect-workflow-in-sublime-text-free-course--net-27293)
+      * [Sublime Text 2 and Markdown: Tips, Tricks, and Links](http://www.macstories.net/roundups/sublime-text-2-and-markdown-tips-tricks-and-links/)
+      * [5 great visual tweaks for Sublime Text](http://wesbos.com/sublime-text-5-visual-tweaks/)
+      * [Sublime for Designers](http://daleanthony.com/sublime-for-designers/)
   - title: graphics editing
     entry: Sketch
     entry-anchor: "#"
     color: "#F9F9AE"
+    notes: |
+      Like most designers, I cut my teeth on Photoshop and Illustrator. So naturally, when I moved from print to web design, I originally carried my Adobe habits along with me.
+
+      That all changed when Sketch app came out. It's light-weight, it has web design on it's mind, and it's a joy to work with.
+
+      # RESOURCES I RECOMMEND
+
+      * [Supercharge your Workflow in Sketch](https://medium.com/design-ux/ebc9e5274845)
+      * [Sketch Keyboard Shortcuts](https://medium.com/design-ux/42c06583ae83)
+      * [The Best Hidden Features In Sketch](http://blog.mengto.com/the-best-hidden-features-in-sketch/)
+      * [The Best Hidden Features In Sketch Part 2](http://blog.mengto.com/hidden-features-sketch-part-2/)
