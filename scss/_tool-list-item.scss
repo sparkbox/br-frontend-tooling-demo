@@ -1,11 +1,7 @@
 .tool-list-item--container {
   @extend %clearfix;
-  padding: 2em 1em;
-
-  &:hover {
-    @include background-image(linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, .1)));
-    cursor: pointer;
-  }
+  padding: 3em 1em;
+  position: relative;
 }
 
 .tool-list-item--title, .tool-list-item--entry {
@@ -31,25 +27,62 @@
 
   a {
     color: #000;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+.tool-list-item--expander-icon, .tool-list-item--expander {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 9em;
+}
+
+.tool-list-item--expander {
+  @include transition(background-color, ease-in-out, .5s);
+  background-color: rgba(0,0,0,.075);
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.15);
+  }
+
+  a {
+    @extend %is-visuallyhidden;
+  }
+}
+
+.tool-list-item--expander-icon {
+  @include transition(transform, ease-in-out, .2s);
+  background-position: 50%;
+  background-size: 40%;
+
+  .tool-list_is-open & {
+    @include transform(rotate(45deg));
   }
 }
 
 .tool-list-item--dropdown {
   @include background-image(linear-gradient(bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)));
-  @include transition(height 250ms ease-in-out);
 
-  // hidden by default
-  overflow: hidden;
-  height: 0;
-}
-
-.js-list-dropdown--is-open {
-  height: auto;
+  // hidden by default unless the user
+  // doesn't have JavaScript enabled
+  .js & {
+    display: none;
+  }
 }
 
 .tool-list-item--dropdown-content {
-  @include opacity(.7);
   width: 65%;
+  max-width: 40em;
   margin: 0 auto; 
   padding: 1em;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+
+  &, a {
+    color: #fff;
+  }
 }
