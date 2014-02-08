@@ -48,8 +48,12 @@
 }
 
 .tool-list-item--dropdown-content {
-  @include opacity(.7);
   width: 65%;
   margin: 0 auto; 
   padding: 1em;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+
+  &, a {
+    color: #fff;
+  }
 }
