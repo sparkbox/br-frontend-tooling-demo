@@ -2,11 +2,13 @@
   <div class="tool-list-item--container">
     <div class="tool-list-item--title">{{title}}</div>
     <div class="tool-list-item--entry"><a href="{{entry-anchor}}" title="{{entry}}">{{entry}}</a></div>
-    <div class="tool-list-item--expander js-trigger-tool-list">
-      <span class="icon-plus tool-list-item--expander-icon">
-        <a href="#" title="Read more">Read more</a>
-      </span>
-    </div>
+    {{#if notes}}
+      <div class="tool-list-item--expander js-trigger-tool-list">
+        <span class="icon-plus tool-list-item--expander-icon">
+          <a href="#" title="Read more">Read more</a>
+        </span>
+      </div>
+    {{/if}}
   </div>
 
   {{#if notes}}

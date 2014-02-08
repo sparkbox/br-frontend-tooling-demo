@@ -2,7 +2,7 @@ tool-list:
   - title: editor
     entry: Sublime Text 3
     entry-anchor: "http://www.sublimetext.com/"
-    color: "#93EF8F"
+    color: "#ad93c1"
     notes: |
       I've used Sublime Text for most of my career as a frontend developer. It's blazing fast, extensible, and has a great community ecosystem.
 
@@ -12,10 +12,10 @@ tool-list:
       * [Sublime Text 2 and Markdown: Tips, Tricks, and Links](http://www.macstories.net/roundups/sublime-text-2-and-markdown-tips-tricks-and-links/)
       * [5 great visual tweaks for Sublime Text](http://wesbos.com/sublime-text-5-visual-tweaks/)
       * [Sublime for Designers](http://daleanthony.com/sublime-for-designers/)
-  - title: graphics editing
+  - title: design
     entry: Sketch
     entry-anchor: "http://www.bohemiancoding.com/sketch/"
-    color: "#F9F9AE"
+    color: "#5accc4"
     notes: |
       Like most designers, I cut my teeth on Photoshop and Illustrator. So naturally, when I moved from print to web design, I originally carried my Adobe habits along with me.
 
@@ -30,8 +30,20 @@ tool-list:
   - title: writing
     entry: Byword
     entry-anchor: "http://bywordapp.com/"
-    color: "#5accc4"
+    color: "#93EF8F"
     notes: |
       I've taken the path from Microsoft Word (waaaay back), to Pages for Mac, to Google Docs, to a plain text / markdown editor. The trend in that brief history is definitely toward simplicity!
 
       In the "plain-text" writing category, I've tried several apps, but I've landing on Byword as the app where I do most of my writing that isn't code.
+  - title: browser
+    entry: Chrome
+    entry-anchor: "https://www.google.com/chrome"
+    color: "#f9f184"
+    notes: |
+      I've taken the path from Microsoft Word (waaaay back), to Pages for Mac, to Google Docs, to a plain text / markdown editor. The trend in that brief history is definitely toward simplicity!
+
+      In the "plain-text" writing category, I've tried several apps, but I've landing on Byword as the app where I do most of my writing that isn't code.
+  - title: music
+    entry: Rdio
+    entry-anchor: "http://www.rdio.com/"
+    color: "#f3b465"
