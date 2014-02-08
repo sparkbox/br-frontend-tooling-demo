@@ -36,15 +36,12 @@
 
 .tool-list-item--dropdown {
   @include background-image(linear-gradient(bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)));
-  @include transition(height 250ms ease-in-out);
 
-  // hidden by default
-  overflow: hidden;
-  height: 0;
-}
-
-.js-list-dropdown--is-open {
-  height: auto;
+  // hidden by default unless the user
+  // doesn't have JavaScript enabled
+  .js & {
+    display: none;
+  }
 }
 
 .tool-list-item--dropdown-content {

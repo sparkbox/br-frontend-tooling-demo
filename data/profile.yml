@@ -1,7 +1,7 @@
 tool-list:
   - title: editor
     entry: Sublime Text 3
-    entry-anchor: "#"
+    entry-anchor: "http://www.sublimetext.com/"
     color: "#93EF8F"
     notes: |
       I've used Sublime Text for most of my career as a frontend developer. It's blazing fast, extensible, and has a great community ecosystem.
@@ -14,7 +14,7 @@ tool-list:
       * [Sublime for Designers](http://daleanthony.com/sublime-for-designers/)
   - title: graphics editing
     entry: Sketch
-    entry-anchor: "#"
+    entry-anchor: "http://www.bohemiancoding.com/sketch/"
     color: "#F9F9AE"
     notes: |
       Like most designers, I cut my teeth on Photoshop and Illustrator. So naturally, when I moved from print to web design, I originally carried my Adobe habits along with me.
