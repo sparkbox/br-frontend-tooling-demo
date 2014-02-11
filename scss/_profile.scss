@@ -35,6 +35,7 @@
 
 .twitter-handle {
   @include rem(padding, .2, 0, .4, 2.5);
+  color: #5b5850;
   text-decoration: none;
 
   &:visited {

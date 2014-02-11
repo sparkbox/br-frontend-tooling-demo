@@ -4,6 +4,8 @@
 $base-font-multiplier: 1;
 $breakpoint-no-queries: false;
 $breakpoint-no-query-wrappers: true;
+$serve-to-nomq-max-width: 60em;
+$no-mq-support: false !default;
 $nomq: ".lt-ie9 &, .no-mq";
 $hi-res: "@media (-webkit-min-device-pixel-ratio: 1.5, only screen) and (-o-min-device-pixel-ratio: 3/2, only screen) and (min-device-pixel-ratio: 1.5)";
 
