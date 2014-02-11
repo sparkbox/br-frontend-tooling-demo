@@ -28,7 +28,16 @@
 }
 
 .profile-tagline {
-  @include rem(margin-top, 2);
+  @include rem(margin, 2.5, 0);
   font-style: italic;
   text-align: center;
+}
+
+.twitter-handle {
+  @include rem(padding, .2, 0, .4, 2.5);
+  text-decoration: none;
+
+  &:visited {
+    color: #5b5850;
+  }
 }
