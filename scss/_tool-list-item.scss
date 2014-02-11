@@ -1,5 +1,6 @@
 .tool-list-item--container {
   @extend %clearfix;
+  overflow: hidden;
   padding: 3em 1em;
   position: relative;
 }
@@ -21,9 +22,14 @@
 
 .tool-list-item--entry {
   @include rem( font-size, 1.4 );
+  display: none;
   line-height: 1.6;
   text-align: left;
   padding-left: 1em;
+
+  @include sb-media(45.75em) {
+    display: block;
+  }
 
   a {
     color: #000;
