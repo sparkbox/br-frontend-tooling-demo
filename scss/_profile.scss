@@ -5,7 +5,7 @@
 
 .profile-bio-wrapper {
   margin: 0 auto;
-  @include rem(margin-top, 3);
+  @include rem(margin-top, 2);
   @include rem(padding, 2, 0, 3, 0);
   position: relative;
   text-align: center;
@@ -23,7 +23,7 @@
   }
 }
 
-.profile-avatar img {
+.profile-avatar {
   @include border-radius(8px);
 }
 

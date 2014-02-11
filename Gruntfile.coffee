@@ -9,9 +9,9 @@ module.exports = (grunt) ->
   grunt.registerTask "root-canal", [ "clean:all", "copy:main", "bower"]
 
   # Clean, compile and concatenate JS
-  grunt.registerTask "javascript:dev", [ "coffee", "concat:js", "jasmine", "cucumberjs", "plato" ]
+  grunt.registerTask "javascript:dev", [ "coffee", "concat:js"]
 
-  grunt.registerTask "javascript:dist", [ "coffee", "concat:js", "modernizr", "jasmine", "cucumberjs" ]
+  grunt.registerTask "javascript:dist", [ "coffee", "concat:js"]
 
   # Build tasks
   grunt.registerTask "buildDev", [ "root-canal", "javascript:dev", "compass:dev", "assemble", "grunticon"]
