@@ -19,3 +19,5 @@ bower_components/*
 *.esproj
 *.sublime-*
 *.orig
+
+.divshot-cache/
