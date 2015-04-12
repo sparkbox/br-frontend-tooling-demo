@@ -24,7 +24,7 @@
 }
 
 .profile-avatar {
-  @include border-radius(8px);
+  border-radius: 8px;
 }
 
 .profile-tagline {

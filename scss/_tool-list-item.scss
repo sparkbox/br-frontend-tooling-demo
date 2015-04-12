@@ -6,7 +6,7 @@
 }
 
 .tool-list-item--title, .tool-list-item--entry {
-  @include opacity(.7);
+  opacity: 0.7;
   display: block;
   width: 50%;
   float: left;
@@ -48,7 +48,7 @@
 }
 
 .tool-list-item--expander {
-  @include transition(background-color, ease-in-out, .5s);
+  transition: background-color ease-in-out .5s;
   background-color: rgba(0,0,0,.075);
 
   &:hover {
@@ -62,17 +62,17 @@
 }
 
 .tool-list-item--expander-icon {
-  @include transition(transform, ease-in-out, .2s);
+  transition: ease-in-out 0.2s;
   background-position: 50%;
   background-size: 40%;
 
   .tool-list_is-open & {
-    @include transform(rotate(45deg));
+    transform: rotate(45deg);
   }
 }
 
 .tool-list-item--dropdown {
-  @include background-image(linear-gradient(bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)));
+  background: linear-gradient(bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4));
 
   // hidden by default unless the user
   // doesn't have JavaScript enabled
