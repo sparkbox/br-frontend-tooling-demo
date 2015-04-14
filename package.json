@@ -16,7 +16,6 @@
     "grunt-contrib-watch": "~0.4",
     "grunt-cucumber": "~0.2.1",
     "grunt-exec": "~0.4.0",
-    "grunt-grunticon": "~1.0.0",
     "grunt-notify": "~0.1.4",
     "grunt-plato": "~0.2.0",
     "grunt-postcss": "^0.3.0",

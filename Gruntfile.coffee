@@ -25,9 +25,9 @@ module.exports = (grunt) ->
   grunt.registerTask "javascript:dist", [ "coffee", "concat:js"]
 
   # Build tasks
-  grunt.registerTask "buildDev", [ "root-canal", "javascript:dev", "sass:dev", "postcss", "assemble", "grunticon"]
+  grunt.registerTask "buildDev", [ "root-canal", "javascript:dev", "sass:dev", "postcss", "assemble"]
 
-  grunt.registerTask "buildProduction", [ "root-canal", "javascript:dist", "sass:prod", "postcss", "assemble", "grunticon"]
+  grunt.registerTask "buildProduction", [ "root-canal", "javascript:dist", "sass:prod", "postcss", "assemble"]
 
   grunt.registerTask "server", ["connect", "watch"]
 
