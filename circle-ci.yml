@@ -1,0 +1,15 @@
+test:
+  override:
+    - ./node_modules/.bin/grunt buildProduction
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - ./node_modules/.bin/divshot promote staging production --token $DivshotToken
+      - ./node_modules/.bin/divshot deploy staging --token $DivshotToken
+
+  feature:
+    branch: /.*/
+    commands:
+      - CODECLIMATE_REPO_TOKEN=$CodeClimateToken ./node_modules/.bin/codeclimate < reports/coverage/merged-report/lcov.info
