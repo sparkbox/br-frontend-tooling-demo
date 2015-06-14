@@ -15,7 +15,7 @@ module.exports = (grunt) ->
 
   ##### Tasks ######
   grunt.loadTasks "grunt"
- 
+
   # NOTE: this has to wipe out everything
   grunt.registerTask "root-canal", [ "clean:all", "copy:main", "bower"]
 
@@ -32,5 +32,5 @@ module.exports = (grunt) ->
   grunt.registerTask "server", ["connect", "watch"]
 
   # Default task
-  grunt.registerTask "default", "buildDev"
+  grunt.registerTask "default", ["buildDev", "server"]
 
