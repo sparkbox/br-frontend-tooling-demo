@@ -1,9 +1,0 @@
-title: ToolCase App
-description: "A demo app for presenting during Sparkbox's Build Right: Frontent Tooling workshop"
-
-# note: Templates can be labeled 'complete: true' or 'ready-for-review: true'. Otherwise, default is 'In Development'
-
-template_list:
-- name: Profile Page
-  target: /profile.html
-  complete: true
