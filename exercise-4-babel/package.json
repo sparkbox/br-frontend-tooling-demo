@@ -1,0 +1,28 @@
+{
+  "name": "Project",
+  "version": "0.1.0",
+  "author": "Sparkbox",
+  "license": "ISC",
+  "scripts": {
+    "start": "parallelshell 'npm run watch' 'npm run server'",
+    "css": "cssmin src/css/*.css > dist/css/theme.min.css",
+    "js": "",
+    "copy": "ncp public dist",
+    "build": "parallelshell 'npm run js' 'npm run css'",
+    "watch": "parallelshell 'npm run watch:src' 'npm run watch:public'",
+    "watch:src": "watch 'npm run build' src/",
+    "watch:public": "watch 'npm run copy' public/",
+    "server": "cd dist && browser-sync start -s --files './*'"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.8",
+    "cssmin": "^0.4.3",
+    "http-server": "^0.9.0",
+    "ncp": "^2.0.0",
+    "parallelshell": "^2.0.0",
+    "uglifyjs": "^2.4.10",
+    "watch": "^1.0.2"
+  }
+}
