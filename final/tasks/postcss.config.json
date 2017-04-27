@@ -1,0 +1,18 @@
+{
+  "use": ["autoprefixer", "css-mqpacker"],
+  "input": [ "dist/css/theme.css" ],
+  "dir": "dist/css", 
+  "autoprefixer": {
+    "browsers": [
+      "> 1%",
+      "last 4 versions",
+      "Firefox > 20",
+      "Firefox >= 20",
+      "Firefox ESR",
+      "Opera 12.1"
+    ]
+  },
+  "css-mqpacker": {
+    "sort": true
+  }
+}

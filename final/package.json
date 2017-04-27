@@ -1,0 +1,40 @@
+{
+  "name": "Project",
+  "version": "0.1.0",
+  "author": "Sparkbox",
+  "license": "ISC",
+  "scripts": {
+    "start": "parallelshell 'npm run watch' 'npm run server' 'npm run public' 'npm run js'",
+    "js": "webpack -w=true",
+    "public": "watch 'npm run copy:public' public/",
+    "copy:public": "ncp public dist",
+    "watch": "node ./tasks/watch.js",
+    "sass": "node-sass ./src/scss/ -o ./dist/css",
+    "postsass": "postcss -c ./tasks/postcss.config.json",
+    "server": "http-server dist/ -o -p 8000",
+    "test": "NODE_ENV=test mocha --compilers js:babel-register"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "css-mqpacker": "^5.0.1",
+    "exit-hook": "^1.1.1",
+    "http-server": "^0.9.0",
+    "md5": "^2.2.1",
+    "mocha": "^3.3.0",
+    "ncp": "^2.0.0",
+    "node-sass": "^4.5.2",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.5.0",
+    "tiny-lr": "^1.0.3",
+    "watch": "^1.0.2",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^0.4.3"
+  }
+}
